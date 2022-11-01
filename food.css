@@ -1,0 +1,94 @@
+:root{
+    --primary-color: rgb(240, 240, 54);
+    --secondary-color: rgb(196, 102, 102);
+    --light-color: #666;
+    --black-color: #192a56;
+    --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 5.5rem ;
+    position: relative;
+    overflow-x: hidden ;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+header .logo{
+    color: var(--black-color);
+    font-size: 2.3rem;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+header .logo i{
+    color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 60px;
+    margin-right: 2px;
+    padding: 5px;
+    background-color: var(--secondary-color);
+}
+
+header ul{
+    display: flex;
+}
+
+header .navi a{
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    padding: 5rem 1.5rem;
+    color: var(--light-color);
+}
+
+header .navi a.active,
+header .navi a:hover{
+     
+     color: var(--primary-color);
+     background-color: var(--secondary-color);
+    
+}
+
+ li{
+    list-style: none;
+}
+
+header .icons-btn i,
+header .icons-btn a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 30px;
+    line-height: 4.5rem;
+    text-align: center;
+    font-size:1.7rem;
+    color: var(--black-color);
+    border-radius: 10px;
+    background-color: #eee;
+}
+
