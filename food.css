@@ -83,12 +83,22 @@ header .icons-btn i,
 header .icons-btn a{
     cursor: pointer;
     margin-left: .5rem;
+    margin-right: 15px;
     height: 30px;
-    line-height: 4.5rem;
+    width: 40px;
     text-align: center;
     font-size:1.7rem;
     color: var(--black-color);
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #eee;
 }
 
+header .icons-btn i:hover,
+header .icons-btn a:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+header .icons-btn #menu-bars{
+    display:none;   
+}
