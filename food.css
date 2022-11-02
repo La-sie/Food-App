@@ -84,12 +84,13 @@ header .icons-btn a{
     cursor: pointer;
     margin-left: .5rem;
     margin-right: 15px;
+    padding: 5px;
     height: 30px;
     width: 40px;
     text-align: center;
     font-size:1.7rem;
     color: var(--black-color);
-    border-radius: 15px;
+    border-radius: 50px ;
     background-color: #eee;
 }
 
@@ -97,8 +98,107 @@ header .icons-btn i:hover,
 header .icons-btn a:hover{
     color: var(--primary-color);
     background: var(--secondary-color);
+    transform: rotate(360deg);
 }
 
 header .icons-btn #menu-bars{
     display:none;   
+}
+
+#search-form{
+    position: fixed;
+    top: -110;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+#search-form.active{
+    top: 0;
+}
+
+#search-form #search-box{
+      width: 50rem;
+      border-bottom: .2rem solid #fff;
+      padding: .5rem 0;
+      color: #fff;
+      font-size: 2rem;
+      text-transform: none;
+      background: none;
+}
+
+#search-form #search-box::placeholder{
+    color: #eee;
+    font-style: italic;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#search-form label:hover{
+    color: var(--secondary-color);
+}
+
+#search-form #close{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 4rem;
+}
+
+
+@media(max-width: 991px){ 
+    html{
+       font-size: 55%; 
+    }
+
+    header{
+        padding: 1rem 2rem;
+    }
+}
+
+@media(max-width: 768px){
+
+    header .icons-btn #menu-bars{
+    display:inline-block;
+    }
+
+    header .navi{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        border-bottom: .1rem solid rgba(0, 0, 0, .1) ;
+        padding: 1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+      header .navi.active{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      }
+
+    header .navi a{
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+    }
 }
