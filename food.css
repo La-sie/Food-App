@@ -26,6 +26,14 @@ html{
     scroll-behavior: smooth;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -107,7 +115,7 @@ header .icons-btn #menu-bars{
 
 #search-form{
     position: fixed;
-    top: -110;
+    top: -110%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -126,7 +134,7 @@ header .icons-btn #menu-bars{
 #search-form #search-box{
       width: 50rem;
       border-bottom: .2rem solid #fff;
-      padding: .5rem 0;
+      padding: 1rem 0;
       color: #fff;
       font-size: 2rem;
       text-transform: none;
@@ -161,6 +169,25 @@ header .icons-btn #menu-bars{
     font-size: 4rem;
 }
 
+.home .home-slider .slide{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     gap: 2rem;
+     padding-top: 9rem;
+}
+
+.home .home-slider .slide .content{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex: 1 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
 
 @media(max-width: 991px){ 
     html{
