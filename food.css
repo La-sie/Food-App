@@ -169,6 +169,10 @@ header .icons-btn #menu-bars{
     font-size: 4rem;
 }
 
+section{
+    padding: 2rem 9%;
+}
+
 .home .home-slider .slide{
      display: flex;
      align-items: center;
@@ -195,8 +199,26 @@ header .icons-btn #menu-bars{
 }
 
 .home .home-slider .slide .content h3{ 
-     font-size: 2rem;
-     color : var(--black-color);
+     font-size: 7rem;
+     color : var(--primary-color); 
+}
+
+.home .home-slider .slide .content p{
+    font-size: 2rem;
+    color: var(--black-color);
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: 10px 5px;
 }
 
 @media(max-width: 991px){ 
@@ -239,3 +261,4 @@ header .icons-btn #menu-bars{
         background: #eee;
     }
 }
+
