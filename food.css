@@ -189,6 +189,16 @@ header .icons-btn #menu-bars{
     width: 100%;
 }
 
+.home .home-slider .slide .content span {
+    color : var(--secondary-color);
+    font-size : 2rem;
+}
+
+.home .home-slider .slide .content h3{ 
+     font-size: 2rem;
+     color : var(--black-color);
+}
+
 @media(max-width: 991px){ 
     html{
        font-size: 55%; 
