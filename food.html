@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
@@ -8,6 +8,7 @@
         </title>
         <link rel="stylesheet" href="food.css">
         <script src="https://kit.fontawesome.com/937f1f0970.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     </head>
     <body>
        <header>
@@ -36,9 +37,9 @@
         </form>
 
         <section class="home" id="home">
-            <div class="home-slider">
-                <div class="wrapper">
-                    <div class="slide">
+            <div class=" swiper-container home-slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide slide">
                         <div class="content">
                             <span>Our Special Dish</span>
                                 <h3>Spaghetti Bolognese</h3>
@@ -51,11 +52,11 @@
                                 <a href="#" class="btn">Order Now</a>
                         </div>
                         <div class="image">
-                            <img src="spaghetti.jpg" alt="">
+                            <img src="spaghetti-bolognaise-104579-1.jpeg" alt="">
                         </div>
                     </div>
 
-                    <div class="slide">
+                    <div class=" swiper-slide slide">
                         <div class="content">
                             <span>Our Special Dish</span>
                                 <h3>Steak and Mashed Potatoes</h3>
@@ -72,14 +73,13 @@
                         </div>
                     </div>
 
-                    <div class="slide">
+                    <div class=" swiper-slide slide">
                         <div class="content">
                             <span>Our Special Dish</span>
                                 <h3>Makzi Sushi</h3>
                                 <p> 
                                  You can order for our all-time favorite since <br>
-                                 sometimes, deciciding on what to eat can be <br>
-                                 so difficult.<br>
+                                 sometimes, deciciding on what to eat can be so difficult.<br>
                                  It is not to late to give you taste buds  some delicious treat.
                                 </p>
                                 <a href="#" class="btn"> Order Now</a>
@@ -89,8 +89,14 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-pagination">
+
+                </div>
             </div>
         </section>
     </body>
 
+
+    <script src="https://unpkg.com/swiper/swiper=-bundle.min.js"></script>
     <script src="food.js"></script>
