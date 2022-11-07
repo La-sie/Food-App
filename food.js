@@ -1,5 +1,3 @@
-
-
 let menuBar = document.getElementById('menu-bars');
 let navBar = document.querySelector('.navi');
 
