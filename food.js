@@ -34,5 +34,4 @@ var swiper = new Swiper ("home-sliderr", {
         clickable: true,
     },
     loop: true,
-    }
-})
+});
