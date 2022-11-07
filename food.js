@@ -1,3 +1,5 @@
+
+
 let menuBar = document.getElementById('menu-bars');
 let navBar = document.querySelector('.navi');
 
@@ -19,3 +21,18 @@ document.querySelector('#search-icon').onclick = () =>{
 document.querySelector('#close').onclick = () =>{
     document.querySelector('#search-form').classList.remove('active');
 }
+
+var swiper = new Swiper ("home-sliderr", {
+    spaceBetween : 30,
+    centeredSlides: true,
+    autoPlay: {
+        delay: 7500,
+        disableOnIntegration: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    loop: true,
+    }
+})
