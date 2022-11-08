@@ -50,9 +50,10 @@ header{
 
 header .logo{
     color: var(--black-color);
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: bolder;
     margin-left: 5px;
+    padding: 15px;
 }
 
 header .logo i{
@@ -186,16 +187,19 @@ section:nth-child(even)
 }
 
 .home .home-slider .slide .content{
-    flex: 1 1 45rem;
+    flex: 1 1 35rem;
 }
 
 .home .home-slider .slide .image{
     flex: 1 1 45rem;
+    padding-right: 70px;
+    margin-right: 70px; 
 }
 
 .home .home-slider .slide .image img{
     width: 100%;
-    border-radius: 300px;
+    height: 100%;
+    margin-right: 100px;
 }
 
 .home .home-slider .slide .content span {
@@ -205,12 +209,12 @@ section:nth-child(even)
 }
 
 .home .home-slider .slide .content h3{ 
-     font-size: 7rem;
+     font-size: 4rem;
      color : var(--primary-color); 
 }
 
 .home .home-slider .slide .content p{
-    font-size: 2rem;
+    font-size: 15px;
     color: black;
     padding: .5rem 0;
     line-height: 1.5;
@@ -233,6 +237,10 @@ section:nth-child(even)
       letter-spacing: .1rem;
 }
 
+.swiper-pagination-bullet-active{
+     background: var(--secondary-color);
+}
+
 @media(max-width: 991px){ 
     html{
        font-size: 55%; 
@@ -240,6 +248,10 @@ section:nth-child(even)
 
     header{
         padding: 1rem 2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 }
 
@@ -271,5 +283,14 @@ section:nth-child(even)
         margin: 1rem;
         font-size: 2rem;
         background: #eee;
+    }
+
+    #search-form #search-box{
+        width:90%;
+        margin: 0 1rem;
+    }
+    .home .home-slider .slide .content h3{
+        color: var(--primary-color);
+        font-size: 5rem;
     }
 }
