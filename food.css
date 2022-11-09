@@ -20,12 +20,12 @@
 
 html{
     font-size: 62.5%;
-    scroll-padding-top: 5.5rem ;
+    scroll-padding-top: 5rem ;
     scroll-behavior: smooth;
 }
 
 section{
-    padding: 2rem 9%;
+    padding: 1rem 9%;
 }
 
 section:nth-child(even){
@@ -47,8 +47,8 @@ header{
 }
 
 header .logo{
-    color: var(--black-color);
-    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-size: 3rem;
     font-weight: bolder;
     margin-left: 5px;
     padding: 15px;
@@ -210,6 +210,7 @@ section:nth-child(even)
 
 .home .home-slider .slide .content span {
     color : var(--secondary-color);
+    font-weight: 600;
     font-size : 2rem;
     margin-top: 30px;
 }
@@ -260,20 +261,49 @@ section:nth-child(even)
 
 .dishes .box-container{
     display: grid;
-    grid-template-columns: repeat(auto, minmax(27rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1rem;
 }
 
 .dishes .box-container .box{
-    display: inline-block;
-    padding: 2.5rem;
-    background-color: #fff;
+    padding: 3rem 2rem;
+    background: #fff;
     border-radius: .3rem;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 2px solid rgba(0, 0, 0, .1);
     box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
     text-align: center;
+    outline-offset: -1.5rem;
+    position: relative;
+}
+
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye{
+    font-size: 10px;
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 10px;
+    height: 3rem;
+    width: 4rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    color: var(--black-color);
+
+}
+.dishes .box-container .box .text{
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.dishes .box-container .box .dish-text h3{
+    font-size: 10px;
+ }
+
+.dishes .box-container .box .stars{
+    font-size: 10px;
+    color: var(--secondary-color);
 }
 
 .swiper-pagination-bullet-active{
