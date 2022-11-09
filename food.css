@@ -2,7 +2,7 @@
     --primary-color: rgb(240, 240, 54);
     --secondary-color: rgb(196, 102, 102);
     --light-color: #666;
-    --black-color: #192a56;
+    --black-color: #040918;
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
 
@@ -21,8 +21,6 @@
 html{
     font-size: 62.5%;
     scroll-padding-top: 5.5rem ;
-    position: relative;
-    overflow-x: hidden ;
     scroll-behavior: smooth;
 }
 
@@ -99,7 +97,7 @@ header .icons-btn a{
     text-align: center;
     font-size:1.7rem;
     color: var(--black-color);
-    border-radius: 50px ;
+    border-radius: 50%;
     background-color: #eee;
 }
 
@@ -171,13 +169,23 @@ header .icons-btn #menu-bars{
 }
 
 section{
+    width: 100%;
+    height: 100%;
     padding: 2rem 9%;
+    margin-bottom: 250px;
 }
 
 section:nth-child(even)
 {
     background: #eee;
 }
+
+.swiper-wrapper .wrapper{
+    width: 100;
+    height: 100%;
+    display: flex;
+}
+
 .home .home-slider .slide{
      display: flex;
      align-items: center;
@@ -187,19 +195,17 @@ section:nth-child(even)
 }
 
 .home .home-slider .slide .content{
-    flex: 1 1 35rem;
+   flex: 1 1 35rem;
 }
 
 .home .home-slider .slide .image{
-    flex: 1 1 45rem;
-    padding-right: 70px;
-    margin-right: 70px; 
+    flex: 1 1 35rem;
+    margin-right: 270px; 
 }
 
 .home .home-slider .slide .image img{
     width: 100%;
     height: 100%;
-    margin-right: 100px;
 }
 
 .home .home-slider .slide .content span {
@@ -216,8 +222,23 @@ section:nth-child(even)
 .home .home-slider .slide .content p{
     font-size: 15px;
     color: black;
-    padding: .5rem 0;
+    padding: .1rem 0;
     line-height: 1.5;
+}
+
+.sub-heading{
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 .btn{
@@ -231,10 +252,28 @@ section:nth-child(even)
     padding: 10px 5px;
 }
 
-.btn:hover{ 
-      background: green;
-      color: #eee;;
-      letter-spacing: .1rem;
+.btn:hover{
+    background: green;
+    color: #eee;;
+    letter-spacing: .1rem;
+}
+
+.dishes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(27rem, 1fr));
+    gap: 1rem;
+}
+
+.dishes .box-container .box{
+    display: inline-block;
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: .3rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
 
 .swiper-pagination-bullet-active{
