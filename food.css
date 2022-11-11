@@ -221,7 +221,7 @@ section:nth-child(even)
 }
 
 .home .home-slider .slide .content p{
-    font-size: 15px;
+    font-size: 18px;
     color: black;
     padding: .1rem 0;
     line-height: 1.5;
@@ -289,9 +289,51 @@ section:nth-child(even)
     width: 4rem;
     line-height: 3rem;
     font-size: 2rem;
-    color: var(--black-color);
-
+    color:var(--secondary-color);
 }
+
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover{
+      cursor: pointer;
+      color: var(--secondary-color);
+      background: var(--primary-color);
+}
+
+.dishes .box-container .box:hover .fa-heart{
+right: -.5rem;
+}
+.dishes .box-container .box:hover .fa-eye{
+left: -.5rem;
+}
+
+.dishes .box-container .box .fa-heart{
+    right: .2rem;
+    color: var(--secondary-color);
+}
+
+.dishes .box-container .box .fa-eye{
+    left: .5rem;
+}
+
+.dishes .box-container .box img{
+     height: 17rem;
+     margin: 1rem 0;
+}
+
+.dishes .box-container .box h3{
+    color: var(--black-color);
+    font-size: 2.1rem;
+}
+
+.dishes .box-container .box .stars{
+   padding: 1rem 0;
+}
+
+.dishes .box-container .box .stars i{
+   font-size: 1.7em;
+   color: green;
+}
+
 .dishes .box-container .box .text{
     font-size: 15px;
     margin-right: 15px;
