@@ -171,12 +171,11 @@ header .icons-btn #menu-bars{
 section{
     width: 100%;
     height: 100%;
-    padding: 2rem 9%;
-    margin-bottom: 250px;
+    padding: 2rem 5%;
+    margin-bottom: 170px;
 }
 
-section:nth-child(even)
-{
+section:nth-child(even){
     background: #eee;
 }
 
@@ -187,11 +186,11 @@ section:nth-child(even)
 }
 
 .home .home-slider .slide{
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     gap: 2rem;
-     padding-top: 9rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 9rem;
 }
 
 .home .home-slider .slide .content{
@@ -269,7 +268,6 @@ section:nth-child(even)
     padding: 3rem 2rem;
     background: #fff;
     border-radius: .3rem;
-    border: 2px solid rgba(0, 0, 0, .1);
     box-shadow: var(--box-shadow);
     position: relative;
     overflow: hidden;
@@ -302,6 +300,7 @@ section:nth-child(even)
 .dishes .box-container .box:hover .fa-heart{
 right: -.5rem;
 }
+
 .dishes .box-container .box:hover .fa-eye{
 left: -.5rem;
 }
@@ -341,11 +340,33 @@ left: -.5rem;
 
 .dishes .box-container .box .dish-text h3{
     font-size: 10px;
- }
+}
 
 .dishes .box-container .box .stars{
     font-size: 10px;
     color: var(--secondary-color);
+}
+
+.dishes .box-container .box span{
+    color: var(--secondary-color);
+    font-weight: 300;
+    margin-right: 5px;
+    font-size: 2.2rem;
+}
+
+.about-text .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about-text .row .image{
+    flex: 1 1 45rem;
+}
+
+.about-text .row .image img{
+    width: 100%;
 }
 
 .swiper-pagination-bullet-active{
@@ -364,6 +385,12 @@ left: -.5rem;
     section{
         padding: 2rem;
     }
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 100%;
+   }
+   
 }
 
 @media(max-width: 768px){
@@ -384,7 +411,7 @@ left: -.5rem;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
 
-      header .navi.active{
+    header .navi.active{
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
       }
 
@@ -404,4 +431,10 @@ left: -.5rem;
         color: var(--primary-color);
         font-size: 5rem;
     }
+
+    .dishes .box-container .box img{
+        height: auto;
+        width: 70%;
+   }
+   
 }
