@@ -369,6 +369,16 @@ left: -.5rem;
     width: 100%;
 }
 
+.about-text .row .content {
+    flex : 1 1 45rem;
+ }
+
+.about-text .row .content h3{ 
+    color : var(--black-color);
+    font-size : 4rem;
+    padding: 3rem 0;
+}
+
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
