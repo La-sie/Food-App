@@ -369,14 +369,51 @@ left: -.5rem;
     width: 100%;
 }
 
-.about-text .row .content {
-    flex : 1 1 45rem;
- }
+.about-text .row .content{
+    flex: 1 1 45rem;
+}
 
-.about-text .row .content h3{ 
-    color : var(--black-color);
-    font-size : 4rem;
-    padding: 3rem 0;
+.about-text .row .content h3{
+    color: var(--black-color);
+    font-size: 3rem;
+    padding: .5rem 0;
+}
+
+.about-text .row .content p{
+    color: var(--black-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.about-text .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about-text .row .content .icons-container .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    padding: 1.5rem 1;
+}
+
+.about-text .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+.about-text .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color: var(--black-color);
 }
 
 .swiper-pagination-bullet-active{
