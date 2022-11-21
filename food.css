@@ -495,6 +495,10 @@ left: -.5rem;
     font-size: 2.5rem;
 }
 
+.review-stories .box-container .box{
+
+}
+
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
