@@ -495,8 +495,22 @@ left: -.5rem;
     font-size: 2.5rem;
 }
 
-.review-stories .box-container .box{
+.review-stories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem
+}
 
+.review-stories .box-comtainer .box {
+    padding: 3rem 2rem;
+    background: #fff;
+    border-radius: .3rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    outline-offset: -1.5rem;
+    position: relative
 }
 
 .swiper-pagination-bullet-active{
