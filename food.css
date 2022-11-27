@@ -495,13 +495,13 @@ left: -.5rem;
     font-size: 2.5rem;
 }
 
-.review-stories .box-container{
+.review-stories .review-slider{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1rem
 }
 
-.review-stories .box-comtainer .box {
+.review-stories .review-slider .wrapper{
     padding: 3rem 2rem;
     background: #fff;
     border-radius: .3rem;
