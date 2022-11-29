@@ -513,6 +513,8 @@ left: -.5rem;
     position: relative
 }
 
+.review-stories
+
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
