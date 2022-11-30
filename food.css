@@ -496,24 +496,27 @@ left: -.5rem;
 }
 
 .review-stories .review-slider{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1rem
+   padding: 1.5rem;
+   box-shadow: var(--box-shadow);
+   border: 1rem solid rgba(0, 0, 0, .1);
+   border-radius: .4rem;
+   position: relative;
 }
 
-.review-stories .review-slider .wrapper{
-    padding: 3rem 2rem;
-    background: #fff;
-    border-radius: .3rem;
-    box-shadow: var(--box-shadow);
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    outline-offset: -1.5rem;
-    position: relative
+.review-stories .review-slider .fa-quote-right{
+    top: 1.5rem;
+    right: 1.5rem;
+    position: absolute;
+    font-size: 5rem;
+    color: #ccc;
 }
 
-.review-stories
+.review-stories .review-slider .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1rem;
+}
 
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
