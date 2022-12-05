@@ -518,6 +518,29 @@ left: -.5rem;
     padding-bottom: 1rem;
 }
 
+.review-stories .review-slider .user img {
+    height: 6.5rem;
+    width: 6.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-stories .review-slider .user h3{
+    color: var(--black-color);
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.review-stories .review-slider .user i{
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.review-stories .review-slider p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
