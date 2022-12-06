@@ -541,6 +541,7 @@ left: -.5rem;
     line-height: 1.8;
     color: var(--light-color);
 }
+
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
