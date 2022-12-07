@@ -33,3 +33,13 @@ var swiper = new Swiper (".home-slider", {
     },
     loop: true,
 });
+
+var swiper = new Swiper (".review-slider", {
+    spaceBetween : 30,
+    centeredSlides: true,
+    autoPlay: {
+        delay: 7500,
+        disableOnIntegration: false,
+    },
+    loop: true,
+});
