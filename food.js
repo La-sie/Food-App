@@ -35,11 +35,25 @@ var swiper = new Swiper (".home-slider", {
 });
 
 var swiper = new Swiper (".review-slider", {
-    spaceBetween : 30,
+    spaceBetween : 20,
     centeredSlides: true,
     autoPlay: {
         delay: 7500,
         disableOnIntegration: false,
     },
     loop: true,
+    breakpoints :{
+    0:{
+     slidesPerView: 1,
+ },
+    640:{
+     slidesPerView: 2,
+ },
+    768:{
+     slidesPerView: 3,
+ },
+    1024:{
+     slidesPerView: 4,
+ },
+}
 });
