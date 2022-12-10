@@ -542,6 +542,17 @@ left: -.5rem;
     color: var(--light-color);
 }
 
+.order{
+    width: 90rem;
+    border-radius: 7px;
+    box-shadow: var(--box-shadow);
+    border: .2rem solid rgba(0, 0, 0, .2);
+    background: #fff;
+    padding: 1.2rem;
+    margin: 0 auto;
+}
+
+
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
 }
