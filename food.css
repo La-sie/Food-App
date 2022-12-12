@@ -542,7 +542,7 @@ left: -.5rem;
     color: var(--light-color);
 }
 
-.order{
+.order form{
     width: 90rem;
     border-radius: 7px;
     box-shadow: var(--box-shadow);
@@ -552,7 +552,9 @@ left: -.5rem;
     margin: 0 auto;
 }
 
-.order .
+.order form .input-box{
+    
+}
 
 .swiper-pagination-bullet-active{
      background: var(--secondary-color);
