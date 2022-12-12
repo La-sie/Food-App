@@ -553,7 +553,41 @@ left: -.5rem;
 }
 
 .order form .input-box{
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.order form .input-box .input{ 
+    width: 50%;
+}
+
+.order form .input-box .input span{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.order form .input-box .input input,
+.order form .input-box .input textarea{
+     background: #eee;
+     border-radius: .4rem;
+     padding: 1rem;
+     font-size: 1.6rem;
+     color: var(--black-color);
+     text-transform: none;
+     margin-bottom: .7rem;
+     width: 100%;
+}
+
+.order form .input-box .input textarea{
+     height: 20rem;
+     resize: none;
+}
+
+.order form .btn{
+     margin-top: 0;
 }
 
 .swiper-pagination-bullet-active{
@@ -623,5 +657,9 @@ left: -.5rem;
         height: auto;
         width: 70%;
    }
+
+   .order form .input-box .input{ 
+        width: 50%;
+}
    
 }
