@@ -543,7 +543,7 @@ left: -.5rem;
 }
 
 .order form{
-    width: 90rem;
+    max-width: 90rem;
     border-radius: 7px;
     box-shadow: var(--box-shadow);
     border: .2rem solid rgba(0, 0, 0, .2);
@@ -581,6 +581,11 @@ left: -.5rem;
      width: 100%;
 }
 
+.order form .input-box .input input:focus,
+.order form .input-box .input textarea:focus{
+     border: .2rem solid var(--secondary-color);
+}
+
 .order form .input-box .input textarea{
      height: 20rem;
      resize: none;
@@ -594,7 +599,7 @@ left: -.5rem;
      background: var(--secondary-color);
 }
 
-@media(max-width: 991px){ 
+@media(max-width: 768px){ 
     html{
        font-size: 55%; 
     }
@@ -614,7 +619,7 @@ left: -.5rem;
    
 }
 
-@media(max-width: 768px){
+@media(max-width:450px){
 
     header .icons-btn #menu-bars{
     display:inline-block;
