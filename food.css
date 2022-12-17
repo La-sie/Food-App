@@ -618,7 +618,19 @@ left: -.5rem;
      text-decoration: underline;
 }
 
-.footer
+.footer .owned{
+     text-align: center;
+     border-radius: .1rem solid rgba(0, 0, 0, 0.1);
+     font-size: 1.8rem;
+     color: var(--black-color);
+     padding: .5rem;
+     padding-top: .5rem;
+     margin-top: .5rem;
+}
+
+.footer .owned span{
+
+}
 
 
 .swiper-pagination-bullet-active{
