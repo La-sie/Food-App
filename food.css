@@ -629,7 +629,7 @@ left: -.5rem;
 }
 
 .footer .owned span{
-
+     color : var(--primary-color);
 }
 
 
